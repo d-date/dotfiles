@@ -1,3 +1,5 @@
+export ZSH=$HOME/.oh-my-zsh
+
 export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
 export ANDROID_HOME=${HOME}/android-sdks
 export PATH=${PATH}:${ANDROID_HOME}/tools
@@ -13,6 +15,8 @@ export PATH=$HOME/.pyenv/shims:$PATH
 export PATH=$HOME/depot_tools:$PATH
 export GOPATH=$HOME/.go
 
+ZSH_THEME="robbyrussell"
+
 alias ll='ls -l'
 alias ipython='ipython --pylab'
 
@@ -21,7 +25,28 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
-test -r ~/.bashrc && . ~/.bashrc
+autoload -U compinit
+compinit -u
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
+
+install_powerline_precmd
+
+# Init rbenv
+eval "$(rbenv init -)"
+
+# Init pyenv
+eval "$(pyenv init -)"
