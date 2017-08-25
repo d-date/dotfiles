@@ -1,0 +1,57 @@
+
+# tap repositories and their packages
+
+tap caskroom/cask
+cask 1password
+cask google-chrome
+cask iterm2
+cask karabiner-elements
+cask sketch
+cask visual-studio-code
+cask cyberduck
+cask arduino
+cask imageoptim
+cask java
+cask slack
+cask skype
+cask clipy
+cask dropbox
+cask upwork
+
+tap homebrew/core
+brew mas
+brew git
+brew heroku
+brew tree
+brew wget
+brew gibo
+brew go
+brew gradle
+brew imagemagick
+brew maven
+brew rbenv
+brew zsh
+brew wireshark
+brew jq
+
+tap homebrew/versions
+
+tap rcmdnk/file
+brew brew-file
+
+# App Store applications
+appstore 402383384 Base (2.4.12)
+appstore 1091189122 Bear (1.2.4)
+appstore 1021284423 CodePiece (1.4.12)
+appstore 847496013 Deckset (1.8.2)
+appstore 442160987 Flycut (1.5)
+appstore 682658836 GarageBand (10.2.0)
+appstore 408981434 iMovie (10.1.6)
+appstore 409183694 Keynote (7.2)
+appstore 409203825 Numbers (4.2)
+appstore 867299399 OmniFocus (2.10)
+appstore 711830901 OmniGraffle (6.6.2)
+appstore 1142578772 OmniOutliner (5.1.1)
+appstore 409201541 Pages (6.2)
+appstore 485812721 TweetDeck (3.9.889)
+appstore 497799835 Xcode (8.3.3)

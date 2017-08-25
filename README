@@ -1,0 +1,16 @@
+# [WIP]dotfiles of d-date
+
+### setup
+
+1. Download `Homebrew`
+run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+2. download dotsfile in your `~/`
+
+//TODO: Move to `install.sh`
+3. make symbolic link to `.brewfile`
+
+``` bash
+ln -s .brewfile dotfiles/.brewfile
+```
+
