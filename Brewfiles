@@ -1,90 +1,41 @@
-install autoconf || true
-install boost || true
-install c-ares || true
-install cabal-install || true
-install cairo || true
-install carthage || true
-install cmake || true
-install ctags || true
-install curl || true
-install d-bus || true
-install dbus || true
-install direnv || true
-install eigen || true
-install fontconfig || true
-install freetype || true
-install gcc || true
-install gdbm || true
-install geoip || true
-install gettext || true
-install ghc || true
-install gibo || true
-install git || true
-install git-flow || true
-install glib || true
-install gmp || true
-install gnutls || true
-install go || true
-install gradle || true
-install graphviz || true
-install gsl || true
-install hiredis || true
-install http-parser || true
-install ilmbase || true
-install imagemagick || true
-install isl || true
-install jpeg || true
-install jq || true
-install libffi || true
-install libgcrypt || true
-install libgpg-error || true
-install libmpc || true
-install libpng || true
-install libtasn1 || true
-install libtiff || true
-install libtool || true
-install libusb || true
-install libusb-compat || true
-install lua || true
-install lzlib || true
-install makedepend || true
-install maven || true
-install mpfr || true
-install mysql || true
-install nettle || true
-install nkf || true
-install node || true
-install numpy || true
-install nvm || true
-install oniguruma || true
-install opencv3 || true
-install openexr || true
-install openssl || true
-install pcre || true
-install pcre2 || true
-install phantomjs || true
-install pixman || true
-install pkg-config || true
-install plantuml || true
-install pyenv || true
-install python || true
-install python3 || true
-install qt || true
-install r || true
-install rbenv || true
-install readline || true
-install rsense || true
-install ruby-build || true
-install sbt || true
-install sqlite || true
-install subversion || true
-install terminal-notifier || true
-install tree || true
-install vim || true
-install volatility || true
-install wget || true
-install wireshark || true
-install xctool || true
-install xz || true
-install yara || true
-install zsh || true
+tap argon/mas
+brew mas
+
+tap caskroom/cask
+
+cask 'android-studio'
+cask 'iterm2'
+cask 'visual-studio-code'
+cask 'sketch'
+cask 'google-chrome'
+cask 'arduino'
+cask 'cyberduck'
+cask 'imageoptim'
+cask 'java'
+cask 'slack'
+cask 'skype'
+cask 'alfred'
+cask 'clipy'
+cask 'karabiner-elements'
+cask 'dropbox'
+
+tap homebrew/core
+
+brew git
+brew heroku
+brew tree
+brew wget
+brew gibo
+brew go
+brew gradle
+brew imagemagick
+brew maven
+brew rbenv
+brew zsh
+brew wireshark
+brew jq
+
+tap homebrew/versions
+
+tap rcmdnk/file
+brew brew-file
