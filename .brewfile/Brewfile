@@ -60,6 +60,7 @@ brew zsh-syntax-highlighting
 brew wireshark
 brew jq
 brew mysql
+brew carthage
 
 tap homebrew/versions
 
