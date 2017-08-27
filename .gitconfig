@@ -2,7 +2,7 @@
 	name = Daiki Matsudate
 	email = d.matsudate@gmail.com
 [core]
-	excludesfile = /Users/DaikiMatsudate/.gitignore_global
+	excludesfile = /Users/d_date/.gitignore_global
 	attributesfile = /Users/DaikiMatsudate/.gitattributes
 [diff "xlsx"]
         binary = true

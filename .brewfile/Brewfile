@@ -2,12 +2,21 @@
 # tap repositories and their packages
 
 tap caskroom/cask
-cask 1password
-cask google-chrome
-cask iterm2
-cask karabiner-elements
-cask sketch
+
+# IDE
+cask android-studio
 cask visual-studio-code
+cask iterm2
+
+# Browser
+cask google-chrome
+
+# Design
+cask sketch
+
+# Utility
+cask 1password
+cask karabiner-elements
 cask cyberduck
 cask arduino
 cask imageoptim
@@ -17,6 +26,23 @@ cask skype
 cask clipy
 cask dropbox
 cask upwork
+cask sourcetree
+cask microsoft-office
+cask vlc
+cask evernote
+
+# Adobe product
+cask adobe-air
+cask adobe-illustrator-cc
+cask adobe-arh
+cask adobe-indesign-cc
+cask adobe-creative-cloud
+cask adobe-photoshop-cc
+cask adobe-creative-cloud-cleaner-tool
+cask adobe-photoshop-lightroom
+cask adobe-digital-editions
+cask dobe-dng-converter
+cask adobe-reader
 
 tap homebrew/core
 brew mas
@@ -31,6 +57,7 @@ brew imagemagick
 brew maven
 brew rbenv
 brew zsh
+brew zsh-syntax-highlighting
 brew wireshark
 brew jq
 

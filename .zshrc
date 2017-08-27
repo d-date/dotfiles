@@ -1,6 +1,33 @@
 export ZSH=$HOME/.oh-my-zsh
 
-export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
+alias zshrc="subl ~/.zshrc"
+alias bundle!="bundle install && rake install"
+alias be="bundle exec"
+alias bi="bundle install"
+alias bu="bundle update"
+alias ri="rake install"
+alias gc="git checkout"
+alias gco="git checkout"
+alias gcm="git checkout master"
+alias gpull="git pull"
+alias gpush="git push"
+alias gbranch="git checkout -b"
+alias gclone="git clone"
+alias g="gittower ."
+alias s="subl ."
+alias o="open ."
+
+function o() {
+  z $1 && open .
+}
+
+function e() {
+  _z $1
+  git pull
+  gittower .
+  subl .
+}
+
 export ANDROID_HOME=${HOME}/android-sdks
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
@@ -19,11 +46,6 @@ ZSH_THEME="robbyrussell"
 
 alias ll='ls -l'
 alias ipython='ipython --pylab'
-
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
 
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
