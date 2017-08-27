@@ -52,7 +52,7 @@ brew wget
 brew gibo
 brew go
 brew gradle
-brew imagemagick
+brew imagemagick@6
 brew maven
 brew rbenv
 brew zsh
