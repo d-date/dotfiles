@@ -41,8 +41,7 @@ cask adobe-photoshop-cc
 cask adobe-creative-cloud-cleaner-tool
 cask adobe-photoshop-lightroom
 cask adobe-digital-editions
-cask dobe-dng-converter
-cask adobe-reader
+cask adobe-dng-converter
 
 tap homebrew/core
 brew mas
@@ -60,6 +59,7 @@ brew zsh
 brew zsh-syntax-highlighting
 brew wireshark
 brew jq
+brew mysql
 
 tap homebrew/versions
 

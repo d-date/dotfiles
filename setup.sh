@@ -41,6 +41,7 @@ open ./Solarized\ Dark.terminal
 
 
 # set up latest ruby version
+if ruby --version != $(rbenv install -l | grep -v - | tail -1) != 
 rbenv install $(rbenv install -l | grep -v - | tail -1)
 rbenv global $(rbenv install -l | grep -v - | tail -1)
 rbenv rehash
