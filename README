@@ -7,10 +7,4 @@ run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 
 2. download dotsfile in your `~/`
 
-//TODO: Move to `install.sh`
-3. make symbolic link to `.brewfile`
-
-``` bash
-ln -s .brewfile dotfiles/.brewfile
-```
-
+3. run `setup.sh`
